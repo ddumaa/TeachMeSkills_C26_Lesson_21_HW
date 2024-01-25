@@ -4,4 +4,7 @@ public class ConsoleWriter {
     public void write(String message) {
         System.out.println(message);
     }
+    public void errorWrite(){
+        write("Некоректный ввод, повторите попытку");
+    }
 }

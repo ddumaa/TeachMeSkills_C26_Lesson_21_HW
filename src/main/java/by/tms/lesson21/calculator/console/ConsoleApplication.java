@@ -7,7 +7,8 @@ import java.util.InputMismatchException;
 import java.util.regex.Pattern;
 
 public class ConsoleApplication {
-    CalculationData calculationData = new CalculationData();
+    ConsoleManagerError consoleManagerError = new ConsoleManagerError();
+    private final CalculationData calculationData = new CalculationData();
     private final ConsoleReader consoleReader = new ConsoleReader();
     private final ConsoleWriter consoleWriter = new ConsoleWriter();
     int count = 1;
@@ -32,13 +33,11 @@ public class ConsoleApplication {
                             count++;
                         }
                     } else {
-                        consoleWriter.write("Некоректный ввод, повторите попытку");
-                        consoleReader.clearScanner();
+                        consoleManagerError.writeMessageClearScanner();
                     }
                 }
             } catch (InputMismatchException e) {
-                consoleWriter.write("Некоректный ввод, повторите попытку");
-                consoleReader.clearScanner();
+                consoleManagerError.writeMessageClearScanner();
             }
         }
         count = 1;
