@@ -41,5 +41,7 @@ public class OperationService {
         } else {
             consoleWriter.write("Список пуст");
         }
+        calculationData.getNumbers().clear();
+        calculationData.getOperations().clear();
     }
 }

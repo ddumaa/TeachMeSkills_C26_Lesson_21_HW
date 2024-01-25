@@ -7,7 +7,7 @@ import java.util.InputMismatchException;
 import java.util.regex.Pattern;
 
 public class ConsoleApplication {
-    ConsoleManagerError consoleManagerError = new ConsoleManagerError();
+    private final ConsoleManagerError consoleManagerError = new ConsoleManagerError();
     private final CalculationData calculationData = new CalculationData();
     private final ConsoleReader consoleReader = new ConsoleReader();
     private final ConsoleWriter consoleWriter = new ConsoleWriter();
