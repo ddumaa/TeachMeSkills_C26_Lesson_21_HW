@@ -1,2 +1,2 @@
-Creating a calculator</>
-accepts and performs simple mathematical operations in unlimited quantities.
+Creating a calculator. 
+Accepts and performs simple mathematical operations in unlimited quantities.
