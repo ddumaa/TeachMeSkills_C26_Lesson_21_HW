@@ -1,10 +1,6 @@
-package by.tms.lesson21.calculator.service;
+package by.tms.lesson21.calculator.console;
 
-import by.tms.lesson21.calculator.console.ConsoleApplication;
-import by.tms.lesson21.calculator.console.ConsoleReader;
-import by.tms.lesson21.calculator.console.ConsoleWriter;
-
-public class LauncherService {
+public class ConsoleLauncherStart {
     ConsoleApplication consoleApplication = new ConsoleApplication();
     ConsoleReader consoleReader = new ConsoleReader();
     ConsoleWriter consoleWriter = new ConsoleWriter();

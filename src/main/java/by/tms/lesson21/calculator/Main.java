@@ -1,10 +1,10 @@
 package by.tms.lesson21.calculator;
 
-import by.tms.lesson21.calculator.service.LauncherService;
+import by.tms.lesson21.calculator.console.ConsoleLauncherStart;
 
 public class Main {
     public static void main(String[] args) {
-        LauncherService launcherService = new LauncherService();
+        ConsoleLauncherStart launcherService = new ConsoleLauncherStart();
         launcherService.launcherStart();
     }
 }
